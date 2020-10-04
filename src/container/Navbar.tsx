@@ -65,13 +65,13 @@ class Navbar extends React.Component <any, State> {
             </div>
         </div>
         {this.state.navbarOpen && (
-            <div className="menuList" ref="menu-list" tabIndex={0} onBlur={this.onBlurHandler}>
+            <div className="menu-list" tabIndex={0} onBlur={this.onBlurHandler}>
                 <Link to='/signin' className="menu-item">Login</Link>
                 <Link to='/contact' className="menu-item">Contact Us</Link>
             </div>
         )}
         {this.state.openSearch && (
-            <div className="mobileSearch" ref="mobile-search" tabIndex={0} onBlur={this.onBlurHandler} >
+            <div className="mobile-search" tabIndex={0} onBlur={this.onBlurHandler} >
                 <input className="search-box" placeholder="Search" type="text"  />
             </div>
         )}
