@@ -1,32 +1,114 @@
 .navbar{
-    height: 50px;
+    height: 65px;
     /* background: linear-gradient(to right, #c04848, #480048); */
     /* background: linear-gradient(to right, #5f2c82, #49a09d); */
-    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    /* background: linear-gradient(to right, #0f0c29, #302b63, #24243e); */
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
-}
-
-.left-items{
-    flex: 3;
-    color: #fff;
-}
-
-.right-items{
-    flex: 1;
-    color: #fff;
+    justify-content: space-between;
+    background-color: #212121;
     font-weight: 700;
+    color: #222222;
+}
+.menu-btn{
+    display: none;
+}
+.logo{
+    height: 45px;
+    padding: 10px 40px;
+    vertical-align: middle;
+}
+.search-box-container{
+    border: 1px solid #eeeeee;
+    border-radius: 3px;
+    background-color: #fff;
     display: flex;
-    justify-content: space-evenly;
+    align-items: center;
+    padding: 5px;
+    width: 40%;
+    max-width: 500px;
+}
+.search-box{
+    border: none;
+    padding: 0 5px;
+    font-size: 14px;
+    height: 25px;
+    width: 100%;
+    outline: none;
+}
+
+.mobile-search-btn{
+    display: none;
+}
+
+.icon{
+    max-height: 20px;
+}
+.items-container{
+    display: flex;
+    margin: 0 40px;
+    align-items: center;
+}
+.item{
+    font-size: 18px;
+    padding: 20px;
+    color: #eeeeee;
+    text-decoration: none;
+}
+
+.item:hover{
+    color: #28df99;
+}
+
+.contact-us{
+    background-color: #0d7377;
+}
+
+.mobile-search{
+    display: none;
+}
+.hide{
+    display: none;
 }
 
 @media(max-width:1000px){
-    .left-items{
-        /* display: none; */
+    .menu-btn{
+        display: unset;
+        padding: 10px;
     }
-    .right-items{
+    .menu-icon{
+        height: 40px;
+        vertical-align: middle;
+    }
+    .items-container{
         display: none;
+    }
+    .search-box-container{
+        display: none;
+    }
+    .mobile-search-btn{
+        display: unset;
+        padding: 10px;
+    }
+    .menu-list{
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0 3px 3px #f6f6f6;
+        transition: 5s ease-in;
+    }
+    .menu-item{
+        padding: 15px 30px;
+        border-bottom: 1px solid #f6f6f6;
+        color: #212121;
+        text-decoration: none;
+    }
+    .mobile-search{
+        display: flex;
+        background-color: #fff;
+        padding: 10px;
+        border: 1px solid #eeeeee;
+    }
+    .show{
+        display: unset;
     }
 }
