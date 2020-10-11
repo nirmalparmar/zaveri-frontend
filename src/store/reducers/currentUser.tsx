@@ -1,6 +1,7 @@
 import { SET_CURRENT_USER } from '../ActionTypes';
+import { CurrentUser } from '../models/CurrentUser';
 
-const DEFAULT_STATE = {
+const DEFAULT_STATE:CurrentUser = {
     isAuthenticated: false,
     user: {}
 };

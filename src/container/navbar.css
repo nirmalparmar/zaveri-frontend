@@ -6,9 +6,15 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #212121;
-    font-weight: 700;
+    background-color: #fffffff2;
+    font-weight: 600;
     color: #222222;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+    font-family: Poppins;
+    box-shadow: 0 4px 12px 0 rgba(0,0,0,.05);
 }
 .menu-btn{
     display: none;
@@ -19,14 +25,13 @@
     vertical-align: middle;
 }
 .search-box-container{
-    border: 1px solid #eeeeee;
-    border-radius: 3px;
     background-color: #fff;
+    border-radius: 3px;
     display: flex;
     align-items: center;
-    padding: 5px;
-    width: 40%;
     max-width: 500px;
+    padding: 5px;
+    border-bottom: 1px solid #CCD4D4;
 }
 .search-box{
     border: none;
@@ -35,6 +40,7 @@
     height: 25px;
     width: 100%;
     outline: none;
+    font-family: Poppins;
 }
 
 .mobile-search-btn{
@@ -51,27 +57,34 @@
 }
 .item{
     font-size: 18px;
-    padding: 20px;
-    color: #eeeeee;
+    padding: 15px;
+    color: #212121;
     text-decoration: none;
-}
-
-.item:hover{
-    color: #28df99;
-}
-
-.contact-us{
-    background-color: #0d7377;
 }
 
 .mobile-search{
     display: none;
 }
-.hide{
+.mobile-nav-item{
+    display: none;
+}
+
+.fa-icon{
+    font-size: 25px;
+    color: #000000;
+}
+.menu-list{
     display: none;
 }
 
 @media(max-width:1000px){
+    .logo{
+        padding: 10px 20px;
+    }
+    .mobile-nav-item{
+        display: flex;
+        align-items: center;
+    }
     .menu-btn{
         display: unset;
         padding: 10px;
@@ -86,15 +99,17 @@
     .search-box-container{
         display: none;
     }
-    .mobile-search-btn{
-        display: unset;
-        padding: 10px;
-    }
     .menu-list{
         display: flex;
+        background-color: #fffffff2;
         flex-direction: column;
-        box-shadow: 0 3px 3px #f6f6f6;
-        transition: 5s ease-in;
+        outline: none;
+        position: absolute;
+        left: -100%;
+        top: 65px;
+        width: 100%;
+        transition: all 0.5s ease-in;
+        z-index: 2;
     }
     .menu-item{
         padding: 15px 30px;
@@ -102,13 +117,29 @@
         color: #212121;
         text-decoration: none;
     }
+    .m-s-container{
+        display: flex;
+        align-items: center;
+        margin: 10px;
+        border-bottom: 1px solid #CCD4D4 ;
+    }
     .mobile-search{
         display: flex;
-        background-color: #fff;
         padding: 10px;
-        border: 1px solid #eeeeee;
+        border: none;
+        font-family: Poppins;
+        color: #222222;
+        outline: none;
+        transition: all 0.5s ease-in;
+        z-index: 2;
+        width: 100%;
     }
     .show{
-        display: unset;
+        transform: translateX(100%);
+        transition: all 0.3s ease-in;
+        position: fixed;
+    }
+    .fa-icon{
+        font-size: 25px;
     }
 }

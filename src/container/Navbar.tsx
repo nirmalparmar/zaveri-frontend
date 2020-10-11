@@ -1,10 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './navbar.css';
-import logo from '../images/zaveri-kart-white.png';
-import search from '../images/search-icon.png';
-import mobileSearch from '../images/search.png';
-import ham from '../images/ham.png';
+import logo from '../images/zaveri-kart.png';
 
 type State = {
     navbarOpen:boolean,
@@ -25,56 +22,48 @@ class Navbar extends React.Component <any, State> {
         this.setState({
             navbarOpen: !this.state.navbarOpen,
             openSearch: false
-        });
-        // this.state.navbarOpen ?  
-        console.log("yes");
-    }
-
-    onBlurHandler = () => {
-        this.setState({
-            navbarOpen: false,
-            openSearch: false
         })
     }
+
 
     toggleSearch = () => {
         this.setState({
             navbarOpen: false,
-            openSearch: !this.state.openSearch
+            openSearch: true
         })
     }
 
     render(){
+        const { navbarOpen, openSearch } = this.state
         return(
         <>    
         <div className="navbar">
-            <div className="menu-btn" onClick={this.toggleNavbar}><img src={ham} className="menu-icon" alt=''/></div>
-
             <Link to='/'><img className="logo" src={logo} alt=''/></Link>
-
-            <div className="search-box-container">
-                <input className="search-box" placeholder="Search" type="text"  />
-                <img className="icon" src={search} alt='' />
-            </div>
-
-            <div className="mobile-search-btn" onClick={this.toggleSearch}><img className="menu-icon" src={mobileSearch} alt='' /></div>
-
             <div className="items-container">
-                <Link to='/signin' className="item">Login</Link>
-                <Link to='/contact' className="item contact-us">Contact Us</Link>
+                <div className="item">
+                    <div className="search-box-container">
+                        <input className="search-box" placeholder="Search" type="text"  />
+                        <i className="fas fa-search"></i>
+                    </div>
+                </div>
+                
+                <Link to='/signin' className="item fa-icon"><i className="far fa-user"></i></Link>
+                <Link to='/contact' className="item">Contact Us</Link>
+            </div>
+            <div className="mobile-nav-item">
+                <Link to='/signin' className="menu-item fa-icon"><i className="far fa-user"></i></Link>
+                <div className="menu-btn fa-icon" onClick={this.toggleNavbar}><i className={navbarOpen ? "fas fa-angle-left" :"fas fa-align-right" }></i></div>
             </div>
         </div>
-        {this.state.navbarOpen && (
-            <div className="menu-list" tabIndex={0} onBlur={this.onBlurHandler}>
-                <Link to='/signin' className="menu-item">Login</Link>
-                <Link to='/contact' className="menu-item">Contact Us</Link>
+        <div className={navbarOpen ? "menu-list show" : "menu-list"}>
+            <div className="m-s-container">
+                <input className="mobile-search" placeholder="Search" type="text"  />
+                <i className="fas fa-search"></i>
             </div>
-        )}
-        {this.state.openSearch && (
-            <div className="mobile-search" tabIndex={0} onBlur={this.onBlurHandler} >
-                <input className="search-box" placeholder="Search" type="text"  />
-            </div>
-        )}
+            <Link to='/earing' className="menu-item">Earings</Link>
+            <Link to='/necklace' className="menu-item">Necklace</Link>
+            <Link to='/contact' className="menu-item">Contact Us</Link>
+        </div>
         </>
         )
     }
