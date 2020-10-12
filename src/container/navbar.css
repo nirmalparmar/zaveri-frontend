@@ -134,7 +134,7 @@
         z-index: 2;
         width: 100%;
     }
-    .show{
+    .menu-list.show{
         transform: translateX(100%);
         transition: all 0.3s ease-in;
         position: fixed;

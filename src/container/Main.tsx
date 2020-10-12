@@ -9,19 +9,21 @@ import AuthForm from '../component/AuthForm';
 const Main = (props:any) => {
     return(
         <div className="main-container">
-            <Switch>
-                <Route exact path="/" render={props => <HomePage {...props} />} />
-                <Route exact path="/signin" render={props => {
-                    return(
-                        <AuthForm signin={true} signup={false} {...props} />
-                    )
-                }} />
-                <Route exact path="/signup" render={props => {
-                    return(
-                        <AuthForm signin={false} signup={true} {...props} />
-                    )
-                }} />
-            </Switch>
+            <div className="component">
+                <Switch>
+                    <Route exact path="/" render={props => <HomePage {...props} />} />
+                    <Route exact path="/signin" render={props => {
+                        return(
+                            <AuthForm type="signin" {...props} />
+                        )
+                    }} />
+                    <Route exact path="/signup" render={props => {
+                        return(
+                            <AuthForm type="signup" {...props} />
+                        )
+                    }} />
+                </Switch>
+            </div>
         </div>
     )
 };
