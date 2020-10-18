@@ -1,5 +1,7 @@
 import axios from "axios";
 
+export const baseUrl = "http://localhost:5000/api";
+
 export function getCall(path:any, data:any){
     return new Promise((resolve, reject) => {
         return axios.get(path, data)

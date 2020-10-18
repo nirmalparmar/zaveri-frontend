@@ -24,7 +24,8 @@
 .input-lg{
     border: 1px solid #CCD4D4;
     padding: 10px 5px;
-    font-size: 13px;
+    font-size: 15px;
+    outline: none;
 }
 
 .title{
@@ -40,13 +41,13 @@
     color: #212121;
     background-color: #fff;
     font-family: Poppins;
-    font-size: 13px;
-    font-weight: 600;
+    font-size: 14px;
+    font-weight: 700;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 16px;
-    height: 32px;
+    border-radius: 20px;
+    height: 40px;
     padding: 5px 20px;
     cursor: pointer;
     outline: none;

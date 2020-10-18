@@ -101,7 +101,7 @@
     }
     .menu-list{
         display: flex;
-        background-color: #fffffff2;
+        background-color: #ffffff;
         flex-direction: column;
         outline: none;
         position: absolute;

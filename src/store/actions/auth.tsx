@@ -1,4 +1,4 @@
-import { postCall } from '../../service/api';
+import { baseUrl, postCall } from '../../service/api';
 import { SET_CURRENT_USER } from '../ActionTypes';
 
 export function setCurrentUser(user:any){
@@ -8,13 +8,14 @@ export function setCurrentUser(user:any){
     }
 }
 
-// export function authUser(type:any, userData:any){
-//     return (dispatch:any) => {
-//         return new Promise((resolve, reject) =>{
-//             return postCall(`/api/auth/${type}`, userData).then(({token, ...user}) => {
-//                 localStorage.setItem("jwtToken", token);
-//                 dispatch(setCurrentUser(user))
-//             })
-//         })
-//     }
-// }
+export function authUser(type:any, userData:any){
+    return (dispatch:any) => {
+        return new Promise((resolve, reject) =>{
+            return postCall(`${baseUrl}/auth/${type}`, userData).then((res:any) => {
+                localStorage.setItem("jwtToken", res.token);
+                dispatch(setCurrentUser(res.email))
+                resolve();
+            })
+        });
+    }
+}

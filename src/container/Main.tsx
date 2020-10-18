@@ -4,22 +4,24 @@ import { connect } from 'react-redux'
 import HomePage from './HomePage';
 import './main.css'
 import AuthForm from '../component/AuthForm';
+import { authUser } from '../store/actions/auth';
 
 
 const Main = (props:any) => {
+    const { authUser } = props;
     return(
         <div className="main-container">
             <div className="component">
                 <Switch>
                     <Route exact path="/" render={props => <HomePage {...props} />} />
-                    <Route exact path="/signin" render={props => {
+                    <Route exact path="/signin" render={(props:any) => {
                         return(
-                            <AuthForm type="signin" {...props} />
+                            <AuthForm onAuth={authUser} type="signin" {...props} />
                         )
                     }} />
-                    <Route exact path="/signup" render={props => {
+                    <Route exact path="/signup" render={(props:any) => {
                         return(
-                            <AuthForm type="signup" {...props} />
+                            <AuthForm onAuth={authUser} type="signup" {...props} />
                         )
                     }} />
                 </Switch>
@@ -35,4 +37,4 @@ function mapStateToProps(state:any){
 }
 
 
-export default withRouter(connect(mapStateToProps, null)(Main))
+export default withRouter(connect(mapStateToProps, { authUser })(Main))
