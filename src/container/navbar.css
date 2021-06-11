@@ -1,11 +1,8 @@
-.navbar{
+.navbar-lg{
     height: 65px;
-    /* background: linear-gradient(to right, #c04848, #480048); */
-    /* background: linear-gradient(to right, #5f2c82, #49a09d); */
-    /* background: linear-gradient(to right, #0f0c29, #302b63, #24243e); */
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: left;
     background-color: #fffffff2;
     font-weight: 600;
     color: #222222;
@@ -14,8 +11,41 @@
     width: 100%;
     z-index: 3;
     font-family: Poppins;
-    box-shadow: 0 4px 12px 0 rgba(0,0,0,.05);
+    box-shadow: 0 2px 8px 0 rgba(0,0,0,.05);
 }
+.navbar-lg .link-lg{
+    margin-right: auto;
+    display: flex;
+}
+.link-lg .link-item-lg{
+    color: #000000;
+    font-weight: 400;
+    font-size: 18px;
+    margin: 0px 15px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    /* height: 100%; */
+}
+.link-lg .link-item-lg:hover{
+    transition-delay: 0.8s;
+    transition: all ease-in;
+    color: #000000aa;
+}
+
+.icon-btn{
+    display: flex;
+    align-items: center;
+    padding: 0px 10px;
+    margin-right: 5px;
+}
+
+.shopping-logo{
+    height: 25px;
+}
+
+
+
 .menu-btn{
     display: none;
 }
@@ -78,6 +108,9 @@
 }
 
 @media(max-width:1000px){
+    .navbar-lg{
+        display: none;
+    }
     .logo{
         padding: 10px 20px;
     }
