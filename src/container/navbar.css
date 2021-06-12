@@ -1,11 +1,8 @@
-.navbar{
+.navbar-lg{
     height: 65px;
-    /* background: linear-gradient(to right, #c04848, #480048); */
-    /* background: linear-gradient(to right, #5f2c82, #49a09d); */
-    /* background: linear-gradient(to right, #0f0c29, #302b63, #24243e); */
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: left;
     background-color: #fffffff2;
     font-weight: 600;
     color: #222222;
@@ -14,16 +11,70 @@
     width: 100%;
     z-index: 3;
     font-family: Poppins;
-    box-shadow: 0 4px 12px 0 rgba(0,0,0,.05);
+    box-shadow: 0 2px 8px 0 rgba(0,0,0,.05);
 }
-.menu-btn{
+.navbar-md{
     display: none;
 }
-.logo{
+.logo-container{
+    display: flex;
+    align-items: center;
+}
+.logo-lg{
     height: 45px;
     padding: 10px 40px;
     vertical-align: middle;
 }
+.navbar-lg .link-lg{
+    margin-right: auto;
+    display: flex;
+}
+.link-lg .link-item-lg{
+    color: #000000;
+    font-weight: 400;
+    font-size: 18px;
+    margin: 0px 15px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    /* height: 100%; */
+}
+.link-lg .link-item-lg:hover{
+    transition-delay: 0.8s;
+    transition: all ease-in;
+    color: #000000aa;
+}
+.left-nv{
+    width: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.bag-icon-btn{
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 0px 10px;
+    margin-right: 5px;
+}
+.cart-count{
+    position: absolute;
+    background-color: #c53d3d;
+    border-radius: 50%;
+    color: #fff;
+    padding: 4px 5px;
+    height: 10px;
+    font-size: 8px;
+    top: -4px;
+    right: 6px;
+    font-weight: 700;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.15);
+}
+.shopping-logo{
+    height: 25px;
+}
+
+
 .search-box-container{
     background-color: #fff;
     border-radius: 3px;
@@ -43,13 +94,9 @@
     font-family: Poppins;
 }
 
-.mobile-search-btn{
-    display: none;
-}
 
-.icon{
-    max-height: 20px;
-}
+
+
 .items-container{
     display: flex;
     margin: 0 40px;
@@ -78,17 +125,39 @@
 }
 
 @media(max-width:1000px){
-    .logo{
-        padding: 10px 20px;
-    }
-    .mobile-nav-item{
+    .navbar-md{
+        height: 65px;
         display: flex;
         align-items: center;
+        background-color: #fffffff2;
+        font-weight: 600;
+        color: #222222;
+        position: sticky;
+        top: 0;
+        width: 100%;
+        z-index: 3;
+        font-family: Poppins;
+        box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+    }
+    .navbar-lg{
+        display: none;
+    }
+    .logo-container{
+        margin: auto;
+    }
+    .logo-md{
+        height: 50px;
+        margin: auto;
     }
     .menu-btn{
-        display: unset;
+        display: flex;
+        align-items: center;
+        font-size: 30px;
         padding: 10px;
+        width: 50px;
     }
+
+
     .menu-icon{
         height: 40px;
         vertical-align: middle;
@@ -101,7 +170,7 @@
     }
     .menu-list{
         display: flex;
-        background-color: #fffffff2;
+        background-color: #fbfbfbed;
         flex-direction: column;
         outline: none;
         position: absolute;
@@ -138,8 +207,5 @@
         transform: translateX(100%);
         transition: all 0.3s ease-in;
         position: fixed;
-    }
-    .fa-icon{
-        font-size: 25px;
     }
 }

@@ -31,7 +31,7 @@ class AuthForm extends Component<any, any> {
                 { this.props.type === "signin" &&
                 <div className="form-container" >
                     <div className="title">
-                        Login!
+                        Welcome Back!
                     </div>
                     <div className="input-group">
                         <div className="input-label">Email</div>
@@ -50,7 +50,7 @@ class AuthForm extends Component<any, any> {
                 { this.props.type === "signup" &&
                 <div className="form-container">
                     <div className="title">
-                        Join Now
+                        Few steps away!
                     </div>
                     <div className="input-group">
                         <div className="input-label">First Name</div>
