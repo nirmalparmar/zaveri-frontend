@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b112c3abc822ef27ea06f1c2c812dc13",
+    "revision": "3cd92175c20bdd462cc4951d9b4611bb",
     "url": "/zaveri-frontend/index.html"
   },
   {
-    "revision": "6086c709c38006ff6276",
+    "revision": "63bf22e1e7905448fb64",
     "url": "/zaveri-frontend/static/css/main.d117c123.chunk.css"
   },
   {
-    "revision": "4a210ac64534cf247454",
-    "url": "/zaveri-frontend/static/js/2.6ed37cc7.chunk.js"
+    "revision": "5f89ae581bc41f1d87fb",
+    "url": "/zaveri-frontend/static/js/2.e4338f97.chunk.js"
   },
   {
-    "revision": "6086c709c38006ff6276",
-    "url": "/zaveri-frontend/static/js/main.27a78d03.chunk.js"
+    "revision": "63bf22e1e7905448fb64",
+    "url": "/zaveri-frontend/static/js/main.c799be18.chunk.js"
   },
   {
     "revision": "c3d9144912f6d9c0c8e2",
