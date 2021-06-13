@@ -1,16 +1,21 @@
 {
   "files": {
-    "main.css": "/zaveri-frontend/static/css/main.d117c123.chunk.css",
-    "main.js": "/zaveri-frontend/static/js/main.d2d653f2.chunk.js",
-    "main.js.map": "/zaveri-frontend/static/js/main.d2d653f2.chunk.js.map",
+    "main.css": "/zaveri-frontend/static/css/main.590b93d9.chunk.css",
+    "main.js": "/zaveri-frontend/static/js/main.116a60ba.chunk.js",
+    "main.js.map": "/zaveri-frontend/static/js/main.116a60ba.chunk.js.map",
     "runtime-main.js": "/zaveri-frontend/static/js/runtime-main.ee0be54f.js",
     "runtime-main.js.map": "/zaveri-frontend/static/js/runtime-main.ee0be54f.js.map",
-    "static/js/2.3c84dc5b.chunk.js": "/zaveri-frontend/static/js/2.3c84dc5b.chunk.js",
-    "static/js/2.3c84dc5b.chunk.js.map": "/zaveri-frontend/static/js/2.3c84dc5b.chunk.js.map",
+    "static/js/2.1e3c0c94.chunk.js": "/zaveri-frontend/static/js/2.1e3c0c94.chunk.js",
+    "static/js/2.1e3c0c94.chunk.js.map": "/zaveri-frontend/static/js/2.1e3c0c94.chunk.js.map",
     "index.html": "/zaveri-frontend/index.html",
-    "precache-manifest.04255892a4664bef0419e00849a54c7f.js": "/zaveri-frontend/precache-manifest.04255892a4664bef0419e00849a54c7f.js",
+    "precache-manifest.fc898682b33a4c76e1bc3dd9278d96e3.js": "/zaveri-frontend/precache-manifest.fc898682b33a4c76e1bc3dd9278d96e3.js",
     "service-worker.js": "/zaveri-frontend/service-worker.js",
-    "static/css/main.d117c123.chunk.css.map": "/zaveri-frontend/static/css/main.d117c123.chunk.css.map",
+    "static/css/main.590b93d9.chunk.css.map": "/zaveri-frontend/static/css/main.590b93d9.chunk.css.map",
+    "static/media/ZK341-min.jpg": "/zaveri-frontend/static/media/ZK341-min.965c9a84.jpg",
+    "static/media/ZK441-min.jpg": "/zaveri-frontend/static/media/ZK441-min.e1214086.jpg",
+    "static/media/ZK452-min.jpg": "/zaveri-frontend/static/media/ZK452-min.4f3876e9.jpg",
+    "static/media/ZK462-min.jpg": "/zaveri-frontend/static/media/ZK462-min.9371b455.jpg",
+    "static/media/wa-logo.60ddbeed.svg": "/zaveri-frontend/static/media/wa-logo.60ddbeed.svg",
     "static/media/zaveri-kart.png": "/zaveri-frontend/static/media/zaveri-kart.1d08b615.png"
   }
 }

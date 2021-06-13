@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/zaveri-frontend/precache-manifest.04255892a4664bef0419e00849a54c7f.js"
+  "/zaveri-frontend/precache-manifest.fc898682b33a4c76e1bc3dd9278d96e3.js"
 );
 
 self.addEventListener('message', (event) => {
